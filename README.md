@@ -18,3 +18,6 @@ Para demostrar la autoría y el entendimiento completo de las herramientas, se e
 ## Instrucciones para la Ejecución
 1. Clonar o descargar el repositorio.
 2. Abrir el archivo `index.html` con doble clic en cualquier navegador web moderno. No requiere dependencias ni servidores externos.
+
+##Diagrama de flujo
+![Diagrama de Flujo]()
