@@ -20,4 +20,4 @@ Para demostrar la autoría y el entendimiento completo de las herramientas, se e
 2. Abrir el archivo `index.html` con doble clic en cualquier navegador web moderno. No requiere dependencias ni servidores externos.
 
 ##Diagrama de flujo
-![Diagrama de Flujo]()
+![Diagrama de Flujo](./Diagrama parcial 3-programacion.drawio.png)
