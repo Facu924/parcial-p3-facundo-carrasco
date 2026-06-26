@@ -1,0 +1,112 @@
+/* --- ESTILOS GENERALES DE LA PÁGINA --- */
+body {
+    background-color: #f4f6f7; 
+    font-family: Arial, sans-serif; /* Tipografía*/
+    display: flex;
+    justify-content: center; /* Centra el contenedor a lo ancho */
+    align-items: center;     /* Centra el contenedor a lo alto */
+    min-height: 100vh;       /* Fuerza a que ocupe toda la pantalla */
+    margin: 0;
+    padding: 20px;
+}
+
+/* --- CONTENEDOR PRINCIPAL --- */
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Sombra sutil para que resalte */
+    width: 100%;
+    max-width: 1000px; /* Ancho máximo para que entren los dos formularios */
+    
+    /* Flexbox básico para poner Registro y Login en paralelo */
+    display: flex;
+    flex-direction: row;     /* Uno al lado del otro */
+    justify-content: space-between;
+    align-items: center;     /* Centra verticalmente el login con el registro */
+    gap: 30px;               /* Separación entre formularios */
+}
+
+/* --- REGISTRO Y LOGIN --- */
+.form-section {
+    flex: 1; /* Hace que ambos formularios ocupen el mismo ancho (mitad y mitad) */
+}
+
+.form-section h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #3498db; /* Línea azul decorativa abajo del título */
+    color: #2c3e50;
+}
+
+/* --- BLOQUES DE LOS INPUTS Y SUS ETIQUETAS --- */
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column; /* La etiqueta arriba, el input abajo */
+    gap: 5px;
+}
+
+/* Caso especial para los Términos y Condiciones */
+.checkbox-group {
+    flex-direction: row; /* checkbox al lado del texto */
+    align-items: center;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none; /* Saca el borde negro feo al hacer clic */
+}
+
+input:focus {
+    border-color: #3498db; /* Cuando hacés clic, el borde se vuelve azul */
+}
+
+/* --- BOTONES --- */
+button {
+    background-color: #3498db; /* Fondo azul */
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 16px;
+    width: 100%;
+    cursor: pointer; /* Hace que aparezca la manito al pasar el mouse */
+}
+
+button:hover {
+    background-color: #2980b9; /* Azul un poco más oscuro al pasar el mouse */
+}
+
+button:disabled {
+    background-color: #95a5a6; /* Gris si el botón se deshabilita (Cargando...) */
+    cursor: not-allowed;
+}
+
+/* --- MENSAJES DE ERROR --- */
+.error-message {
+    color: #e74c3c; /* Texto rojo para los errores */
+    font-size: 12px;
+    margin-top: 2px;
+    min-height: 15px; /* Mantiene el espacio reservado aunque esté vacío */
+}
+
+/* --- LÍNEA DIVISORIA VERTICAL --- */
+.divider {
+    border: 0;
+    width: 1px;       /* Ancho de 1 píxel (línea finita) */
+    height: 400px;    /* Alto fijo para separar bien los bloques */
+    background-color: #ddd; /* Color gris suave */
+    margin: 0 10px;
+}
